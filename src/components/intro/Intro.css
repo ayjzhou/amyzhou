@@ -9,33 +9,30 @@
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    opacity: 1;
 }
 
 .fadingAnimation{
-    -webkit-animation: fadeinout 4s linear forwards;
-    animation: fadeinout 4s linear forwards;
+    -webkit-animation: fadeinout 3s linear forwards;
+    -o-animation: fadeinout 3s linear forwards;
+    -moz-animation: fadeinout 3s linear forwards;;
+    animation: fadeinout 3s linear forwards;
 }
 
 @-webkit-keyframes fadeinout {
-    0%,99% { opacity: 0.01; }
+    0%,100% { opacity: 0; }
     50% { opacity: 1; }
-    100% { opacity: 0;}
 }
 
 @-o-keyframes fadeinout{
-    0%,99% { opacity: 0.01; }
+    0%,100% { opacity: 0; }
     50% { opacity: 1; }
-    100% { opacity: 0;}
 }
 @-moz-keyframes fadeinout{
-    0%,99% { opacity: 0.01; }
+    0%,100% { opacity: 0; }
     50% { opacity: 1; }
-    100% { opacity: 0;}
 }
 
 @keyframes fadeinout {
-    0%,99% { opacity: 0.01; }
+    0%,100% { opacity: 0; }
     50% { opacity: 1; }
-    100% { opacity: 0;}
 }
