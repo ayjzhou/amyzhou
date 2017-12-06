@@ -1,5 +1,5 @@
 .MainPage{
- background-color: #787878;
+ background-color: black;
 }
 
 .section{
@@ -9,48 +9,59 @@
     display:inline-block;
 }
 
-.section-aqua{
-    height: 40vh;
-    background: aqua;
+.topBar{
+    width: 100%;
+    z-index: 10;
+    position: fixed;
 }
-
 .section-text{
     font-size: 2em;
     position: relative;
-    color: black;
+    color: white;
     top: 50%;
     transform: translateY(-50%);
 }
 
 #navBar{
+    position: fixed;
     display:inline-block;
-    float:right;
-}
-#navBar ul > li > a {
-     color: black;
+    right: 5px;
 }
 
+#navBar ul > li {
+    color: black;
+    font-size: 1.8vh;
+}
 
+#navBar ul > li :hover{
+    color: black;
+    font-size: 2vh;
+}
 
 #name{
-    font-size: 1.5em;
+    position: fixed;
+    font-size: 3vh;
     display:inline-block;
-    border-color: #787878;
-    background-color: #787878;
+    color:white;
+    border-color: black;
+    background-color: black;
+    left:5px;
 }
 
-.profile-wrapper{
+.wrapper{
     text-align: center;
-    background-color: #202020;
+    background-color: #101010;
     margin: 0 20vh;
     padding: 10vh 0;
     border-radius: 10vh;
+    box-shadow: 0px 5px 0px #080000;
 }
 #section-profile-pic{
     display:inline-block;
-    margin: 0 50px;
     width: 45vh;
     height:45vh;
+    margin-right: 5vh;
+    margin-bottom: 3vh;
     vertical-align: top;
     border-radius: 22.5vh;
     transform:scale(1);
@@ -80,12 +91,11 @@
     text-align: center;
     word-wrap: break-word;
     background-color: black;
-    margin: 0 50px;
     border-radius: 15vh;
     vertical-align: top;
 }
 .section-profile-text{
-    padding:5vh;
+    padding: 3vh 5vh 5vh 5vh;
     color: white;
 }
 #learnMore{
@@ -94,12 +104,81 @@
     font-size:2.5vh;
 }
 
-#profile-about-me{
+.profile-about-me-text{
     text-align: left;
     position: relative;
     left: 5vh;
     top: -5vh;
     color: white;
+}
+
+#section-project-pic{
+    display:inline-block;
+    margin-right: 5vh;
+    margin-bottom: 3vh;
+    width: 45vh;
+    height:45vh;
+    vertical-align: top;
+    border-radius: 22.5vh;
+    transform:scale(1);
+    -webkit-transform:scale(1);
+    -moz-transform:scale(1);
+    transition:transform .3s, border .3s;
+    -webkit-transition:-webkit-transform .5s, border .5s;
+    -moz-transition:-moz-transform .5s, border .5s;
+    background-image: url("../../assets/img/ballrathon.jpg");
+    background-size: 100%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+nav.stroke  {
+    width: 100%;
+    margin: 0 auto;
+    background: #fff;
+}
+nav.stroke  ul {
+    list-style: none;
+    text-align: center;
+}
+nav.stroke  ul li {
+    display: inline-block;
+}
+nav.stroke  ul li a,
+nav.stroke  ul li a:after,
+nav.stroke  ul li a:before {
+    transition: all .5s;
+}
+nav.stroke  ul li a:hover {
+    color: #555;
+}
+
+nav.stroke ul li a{
+    position: relative;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    color: #aaa;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+nav.stroke ul li a:after{
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    right: 0;
+    width: 0;
+    content: '.';
+    color: transparent;
+    background: #aaa;
+    height: 1px;
+
+}
+nav.stroke ul li a:hover:after {
+    width: 100%;
 }
 
 
