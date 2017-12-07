@@ -57,7 +57,7 @@ class MainPage extends React.Component{
                     <div className="section-profile-right">
                         <div className="section-profile-text">I'm currently a second year Computer Engineering
                             student at Waterloo.<br/>
-                            I love to eat, sleep and repeat.
+                            I eat, I sleep, then I repeat.
                             <Button id="learnMore"  bsStyle="primary">Learn More</Button>
                         </div>
                     </div>
