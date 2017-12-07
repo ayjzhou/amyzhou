@@ -1,16 +1,16 @@
 .MainPage{
- background-color: white;
+    background-color: white;
+    width: 100%;
 }
 
-.greeting{
+#greeting{
     width:100%;
-    height: 40vh;
+    height: 30vh;
     text-align: center;
     display:inline-block;
-    margin: 0 auto;
-    /*background-color: #fafafa;*/
-    background-color: #9ad3de;
+    /*background-color: #9ad3de;*/
     position: relative;
+    margin-top:44px;
 }
 
 .topBar{
@@ -19,40 +19,24 @@
     position: fixed;
 }
 .greeting-text{
-    font-size: 2em;
+    font-size: 8vh;
     position: relative;
     color: black;
     top: 50%;
     transform: translateY(-50%);
 }
 
-#navBar{
-    position: fixed;
-    display:inline-block;
-    right: 5px;
-}
-
-#navBar ul > li {
-    color: black;
-    font-size: 1.8vh;
-}
-
-#navBar ul > li :hover{
-    color: black;
-    font-size: 2vh;
-}
-
 .wrapper{
     text-align: center;
+    padding:10vh;
     /*margin: 0 20vh;*/
-    padding: 10vh 0;
     /*border-radius: 10vh;*/
 }
 #section-profile-pic{
     display:inline-block;
     width: 50vh;
     height:50vh;
-    margin: 0 4vh 5vh 4vh;
+    margin: 0 4vh 0vh 4vh;
     border-radius: 25vh;
     background-image: url("../../assets/img/me.jpg");
     background-size: 100%;
@@ -62,15 +46,16 @@
     display:inline-block;
     width: 70vh;
     height: 50vh;
-    font-size: 4vh;
+    font-size: 3vh;
     text-align:left;
     word-wrap: break-word;
     /*border-radius: 15vh;*/
     vertical-align: top;
 }
 .section-profile-text{
-    padding: 6vh;
-    margin-left: 5vh;
+    padding: 4vh 6vh;
+    top:0px;
+    margin-left: 2vh;
     color: white;
 }
 #learnMore{
@@ -78,20 +63,20 @@
     width: 20vh;
     font-size:2.5vh;
     display: block;
-    margin-top: 5vh;
+    margin-top: 9vh;
 }
 
 .section-header-text{
-    text-align: left;
+    font-size: 5vh;
+    margin-bottom: 4vh;
+    display: block;
     position: relative;
-    margin-left: 30vh;
-    top: -5vh;
     color: black;
 }
 
 #section-experience-pic{
     display:inline-block;
-    margin: 0 4vh 5vh 4vh;
+    margin: 0 4vh 0 4vh;
     width: 50vh;
     height:50vh;
     vertical-align: top;
@@ -102,7 +87,7 @@
 
 #section-project-pic{
     display:inline-block;
-    margin: 0 4vh 5vh 4vh;
+    margin: 0 4vh 0 4vh;
     width: 50vh;
     height:50vh;
     vertical-align: top;
@@ -112,7 +97,7 @@
 }
 
 #contact-wrapper{
-    padding: 10vh 0 10vh 0;
+    padding: 5vh 0 5vh 0;
     text-align: center;
     background-color: #ffe6e6;
 }
