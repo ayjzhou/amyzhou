@@ -8,7 +8,7 @@ class App extends React.Component {
         super (props);
         this.changeTransitionalState = this.changeTransitionalState.bind(this);
         this.state = {
-            transitionalState: 0,
+            transitionalState: 2,
             date : new Date(),
         }
     }

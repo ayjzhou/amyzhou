@@ -87,15 +87,15 @@ class MainPage extends React.Component{
                 </div>
 
                 <div id="contact-wrapper">
-                    <div className="contact-blocks" id="contact-github">
+                    <a className="contact-blocks" id="contact-github" href="https://github.com/MickelPickelH" target="_blank">
+                    </a>
+                    <a className="contact-blocks" id="contact-linkedin" href="https://www.linkedin.com/in/jun-ke-michael-huang/" target="_blank">
 
-                    </div>
-                    <div className="contact-blocks" id="contact-linkedin">
+                    </a>
+                    <a className="contact-blocks" id="contact-instagram" href="https://www.instagram.com/mickelpickel_h" target="_blank">
 
-                    </div>
-                    <div className="contact-blocks" id="contact-instagram">
 
-                    </div>
+                    </a>
                 </div>
 
             </Animated>
