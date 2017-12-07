@@ -10,13 +10,13 @@ class Intro extends React.Component{
     }
 
     changeState(){
-        if(this.props.transitionalState === 0 && new Date() - this.props.date >= 3000){
+        if(this.props.transitionalState === 0 && new Date() - this.props.date >= 2000){
             let hi = document.getElementById('header-text');
             hi.classList.remove("fadingAnimation");
             hi.classList.add("fadingAnimation");
             hi.innerHTML = "Jun Ke Here";
             this.props.changeTransitionalState(1);
-        }else if (this.props.transitionalState === 1 && new Date() - this.props.date >= 6000){
+        }else if (this.props.transitionalState === 1 && new Date() - this.props.date >= 4000){
             this.props.changeTransitionalState(2);
         }
     }
