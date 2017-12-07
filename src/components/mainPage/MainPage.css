@@ -84,7 +84,7 @@
 .section-header-text{
     text-align: left;
     position: relative;
-    left: 30vh;
+    margin-left: 30vh;
     top: -5vh;
     color: black;
 }
