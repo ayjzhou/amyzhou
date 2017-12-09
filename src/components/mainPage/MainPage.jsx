@@ -9,11 +9,24 @@ class MainPage extends React.Component{
         // this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
         this.state = {
             popUps: {
-                aboutMePopUp: 0,
-
+                aboutMePopup: 0,
+                experiencePopup: 0,
+                projectPopup:0,
             }
         }
     }
+
+    // setAboutMePopup(popupState){
+    //     this.setState({aboutMePopup: popupState});
+    // }
+    //
+    // setExperiencePopup(popupState){
+    //     this.setState({experiencePopup: popupState});
+    // }
+    //
+    // setProjectPopup(popupState){
+    //     this.setState({projectPopup: popupState});
+    // }
 
     // componentDidMount() {
     //     this.updateWindowDimensions();
@@ -60,7 +73,7 @@ class MainPage extends React.Component{
                             I'm currently a second year Computer Engineering
                             student at Waterloo.
                             I eat, I sleep, then I repeat.
-                            <Button id="learnMore"  bsStyle="primary">Learn More</Button>
+                            <Button id="learnMore"  bsStyle="primary" onClick={() => this.setState({aboutMePopup: 1})}>Learn More</Button>
                         </div>
                     </div>
                 </div>
@@ -72,7 +85,7 @@ class MainPage extends React.Component{
                             <span className="section-header-text">Experience</span>
                             I interned at Ethoca as a Software Developer in an Agile environment.
                             My daily tasks include using Java, AngularJS and Git.<br/>
-                            <Button id="learnMore"  bsStyle="primary">Learn More</Button>
+                            <Button id="learnMore"  bsStyle="primary" onClick={() => this.setState({experiencePopup: 1})}>Learn More</Button>
                         </div>
                     </div>
                 </div>
@@ -85,7 +98,7 @@ class MainPage extends React.Component{
                             I love playing games...
                             Why not build my own?
                             Ballrathon is an Android game live on Google Play store.
-                            <Button id="learnMore"  bsStyle="primary">Learn More</Button>
+                            <Button id="learnMore"  bsStyle="primary" onClick={() => this.setState({projectPopup: 1})}>Learn More</Button>
                         </div>
                     </div>
                 </div>
