@@ -11,6 +11,7 @@
     background-color: whitesmoke;
     position: relative;
     margin-top:44px;
+    background-color: #e1e8f0;
 }
 
 .topBar{
@@ -195,6 +196,7 @@ nav.stroke ul li a{
     padding: 15px;
     color: #aaa;
     font-weight: 800;
+    font-size: 1.3em;
     text-transform: uppercase;
 }
 nav.stroke ul li a:after{

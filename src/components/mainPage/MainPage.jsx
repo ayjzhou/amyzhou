@@ -7,6 +7,7 @@ import ExperienceModal from './popUpMedia/ExperienceModal';
 import ProjectModal from './popUpMedia/ProjectModal';
 
 
+
 //
 // const customStyles = {
 //     content : {
@@ -65,7 +66,6 @@ class MainPage extends React.Component{
     // }
 
     render() {
-        console.log(this.state.aboutMeModal);
         return(
             <div className="MainPage">
                 <Animated className="slideInDown topBar" >
@@ -119,10 +119,10 @@ class MainPage extends React.Component{
                             student at Waterloo.<br/>
                             I eat, I sleep, then I repeat.
                             <Button id="learnMore"  bsStyle="primary" onClick={this.openAboutMeModal}>Learn More</Button>
-                            {this.state.aboutMeModal ? <AboutMeModal
+                            <AboutMeModal
                                 open={this.state.aboutMeModal}
                                 close={this.closeModal}
-                            /> : null}
+                            />
 
                         </div>
                     </div>
@@ -136,10 +136,10 @@ class MainPage extends React.Component{
                             I interned at Ethoca as a Software Developer in an Agile environment.
                             My daily tasks include using Java, AngularJS and Javascript.<br/>
                             <Button id="learnMore"  bsStyle="primary" onClick={this.openExperienceModal}>Learn More</Button>
-                            {this.state.experienceModal ? <ExperienceModal
+                          <ExperienceModal
                                 open={this.state.experienceModal}
                                 close={this.closeModal}
-                            />: null}
+                          />
                         </div>
                     </div>
                 </div>

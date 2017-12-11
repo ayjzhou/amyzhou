@@ -1,5 +1,6 @@
 import React from 'react';
 import Modal from "react-modal"
+import "./Modal.scss";
 
 const style = {
     content : {
@@ -11,6 +12,8 @@ const style = {
         transform             : 'translate(-50%, -50%)'
     }
 };
+
+Modal.setAppElement('#root');
 
 class ExperienceModal extends React.Component{
     constructor(props){
@@ -30,11 +33,12 @@ class ExperienceModal extends React.Component{
                     onAfterOpen={this.afterOpenModal}
                     onRequestClose={this.props.close}
                     style={style}
-                    contentLabel="Example Modal"
+                    contentLabel="Modal"
+                    closeTimeoutMS={300}
                 >
 
                     <h2 >Hello</h2>
-                    <button onClick={this.props.closes}>close</button>
+                    <button onClick={this.props.close}>close</button>
                     <div>I am a modal</div>
                     <form>
                         <input />

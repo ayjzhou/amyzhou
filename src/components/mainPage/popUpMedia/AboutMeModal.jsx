@@ -13,6 +13,7 @@ const style = {
         transform             : 'translate(-50%, -50%)'
     }
 };
+Modal.setAppElement('#root');
 
 class AboutMeModal extends React.Component{
     constructor(props){
@@ -31,8 +32,8 @@ class AboutMeModal extends React.Component{
                    // onAfterOpen={this.afterOpenModal}
                     onRequestClose={this.props.close}
                     style={style}
-                    contentLabel="Example Modal"
-                    closeTimeoutMS
+                    contentLabel="Modal"
+                    closeTimeoutMS={300}
                     >
 
                     <h2 >Hello</h2>

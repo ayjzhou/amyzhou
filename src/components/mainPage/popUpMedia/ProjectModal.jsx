@@ -1,6 +1,6 @@
 import React from 'react';
 import Modal from "react-modal"
-
+import "./Modal.scss";
 
 const style = {
     content : {
@@ -13,6 +13,8 @@ const style = {
 
     }
 };
+
+Modal.setAppElement('#root');
 
 class ProjectModal extends React.Component{
     constructor(props){
@@ -32,6 +34,7 @@ class ProjectModal extends React.Component{
                     onRequestClose={this.props.close}
                     style={style}
                     contentLabel="Modal"
+                    closeTimeoutMS={300}
                 >
 
                     <h2 >Hello</h2>
