@@ -3,7 +3,7 @@
 }
 
 .ReactModalPortal .ReactModal__Overlay {
-  transition: opacity 300ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
   background: rgba(0, 0, 0, 0.15);
   &--after-open {
     opacity: 1;
@@ -12,3 +12,132 @@
     opacity: 0;
   }
 }
+#navigation{
+  float: right;
+  margin: 1% 0 1% 1%;
+}
+hr{
+  clear:both;
+  margin:0;
+  padding: 0;
+}
+#close{
+  clear: both;
+  float: right;
+}
+
+.nextPageAnimation{
+  transition: opacity 300ms ease-in-out;
+  background: rgba(0, 0, 0, 0.15);
+  &--before-close {
+    opacity: 0;
+  }
+}
+
+#warning{
+  color: red;
+}
+
+ul {
+  list-style-type: none;
+
+}
+
+#javaLogo{
+  display:inline-block;
+  width: 10vh;
+  height:5.6vh;
+  background-image: url("../../../assets/img/java.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#angularJSLogo{
+  display:inline-block;
+  width: 10vh;
+  height:2.5vh;
+  background-image: url("../../../assets/img/AngularJS.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#reactJsLogo{
+  display:inline-block;
+  width: 10vh;
+  height:9.5vh;
+  background-image: url("../../../assets/img/reactJS.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#javaScriptLogo{
+  display:inline-block;
+  width: 10vh;
+  height:10vh;
+  background-image: url("../../../assets/img/javascript.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#cplusplusLogo{
+  display:inline-block;
+  width: 10vh;
+  height:5.5vh;
+  background-image: url("../../../assets/img/c++.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.twoStars{
+  display:inline-block;
+  width: 10vh;
+  height:2.5vh;
+  background-image: url("../../../assets/img/2stars.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.threeStars{
+  display:inline-block;
+  width: 10vh;
+  height:2.5vh;
+  background-image: url("../../../assets/img/3stars.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.stackElement{
+  margin:15px 30px 15px 30px;
+}
+
+.stackHeaderLeft{
+  float: left;
+  margin-left: 30px;
+}
+
+.stackHeaderRight{
+  float: right;
+  margin-right: 15px;
+}
+
+.stack{
+  display:block;
+  text-align: center;
+}
+
+.scroll{
+  overflow-y: auto;
+}
+
+.ReactModal__Body--open {
+  overflow: hidden;
+}
+
+.modalText{
+  font-size: 2vh;
+}
+
+.modalHeader{
+  font-size: 3vh;
+}
+

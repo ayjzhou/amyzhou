@@ -1,3 +1,11 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
 .MainPage{
     background-color: white;
     width: 100%;
@@ -29,7 +37,7 @@
 
 .wrapper{
     text-align: center;
-    padding:10vh;
+    padding:6vh 0;
     /*margin: 0 20vh;*/
     /*border-radius: 10vh;*/
 }
@@ -37,7 +45,8 @@
     display:inline-block;
     width: 50vh;
     height:50vh;
-    margin: 0 4vh 0vh 4vh;
+    /*margin: 0 10px 0 10px;*/
+    /*padding: 0 4vh 0 4vh;*/
     border-radius: 25vh;
     background-image: url("../../assets/img/me.jpg");
     background-size: 100%;
@@ -45,39 +54,46 @@
 
 .section-profile-right{
     display:inline-block;
-    width: 70vh;
-    height: 50vh;
-    font-size: 3vh;
+    width: 50vh;
+    height: 35vh;
+    font-size: 2vh;
     text-align:left;
     word-wrap: break-word;
     /*border-radius: 15vh;*/
     vertical-align: top;
+    /*padding-top: 3vh;*/
 }
 .section-profile-text{
-    padding: 4vh 6vh;
+    padding: 20px 30px;
     top:0px;
-    margin-left: 2vh;
+    margin-left: 10px;
     color: white;
+    width: 50vh;
 }
 #learnMore{
     height: 6vh;
     width: 20vh;
     font-size:2.5vh;
     display: block;
-    margin-top: 9vh;
+    margin-top: 5vh;
 }
 
 .section-header-text{
     font-size: 5vh;
     margin-bottom: 4vh;
+    margin-top: -4vh;
     display: block;
     position: relative;
     color: black;
+    white-space: nowrap;
 }
 
 #section-experience-pic{
     display:inline-block;
-    margin: 0 4vh 0 4vh;
+    /*margin: 0 4vh 0 4vh;*/
+    /*padding: 0 4vh 0 4vh;*/
+
+    /*margin: 0 10px 0 10px;*/
     width: 50vh;
     height:50vh;
     vertical-align: top;
@@ -88,7 +104,8 @@
 
 #section-project-pic{
     display:inline-block;
-    margin: 0 4vh 0 4vh;
+    /*padding: 0 4vh 0 4vh;*/
+    /*margin: 0 10px 0 10px;*/
     width: 50vh;
     height:50vh;
     vertical-align: top;
@@ -104,8 +121,8 @@
 }
 
 .contact-blocks{
-    width: 30vh;
-    height: 30vh;
+    width: 23vh;
+    height: 23vh;
     display:inline-block;
     border-radius: 15vh;
     margin: 5vh 10vh 5vh 10vh;
@@ -138,6 +155,11 @@
 
 #contact-instagram{
     background-image: url("../../assets/img/instagram.png");
+    background-size: 100%;
+}
+
+#contact-resume{
+    background-image: url("../../assets/img/resume.png");
     background-size: 100%;
 }
 
@@ -196,7 +218,7 @@ nav.stroke ul li a{
     padding: 15px;
     color: #aaa;
     font-weight: 800;
-    font-size: 1.3em;
+    font-size: 1.8vh;
     text-transform: uppercase;
 }
 nav.stroke ul li a:after{

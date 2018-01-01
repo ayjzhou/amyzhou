@@ -22,7 +22,6 @@ class Intro extends React.Component{
     }
     render(){
         setInterval(this.changeState, 100);
-        console.log("this is ran");
         return(
             <div className="header">
                 <div id="header-text" >

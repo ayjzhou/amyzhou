@@ -116,8 +116,8 @@ class MainPage extends React.Component{
                         <div className="section-profile-text">
                             <span className="section-header-text"> About Me</span>
                             I'm currently a second year Computer Engineering
-                            student at Waterloo.<br/>
-                            I eat, I sleep, then I repeat.
+                            student at University of Waterloo.<br/>
+                            I code, I workout, I eat, I sleep, then I repeat.
                             <Button id="learnMore"  bsStyle="primary" onClick={this.openAboutMeModal}>Learn More</Button>
                             <AboutMeModal
                                 open={this.state.aboutMeModal}
@@ -134,7 +134,8 @@ class MainPage extends React.Component{
                         <div className="section-profile-text">
                             <span className="section-header-text">Experience</span>
                             I interned at Ethoca as a Software Developer in an Agile environment.
-                            My daily tasks include using Java, AngularJS and Javascript.<br/>
+                            My daily tasks included using Java, AngularJS and Javascript. I have also
+                            learned other interesting things on my spare time!
                             <Button id="learnMore"  bsStyle="primary" onClick={this.openExperienceModal}>Learn More</Button>
                           <ExperienceModal
                                 open={this.state.experienceModal}
@@ -152,11 +153,11 @@ class MainPage extends React.Component{
                             I love playing games...
                             Why not build my own?
                             Ballrathon is an Android game live on Google Play store.
-                            <Button id="learnMore"  bsStyle="primary" onClick={this.openProjectModal}>Learn More</Button>
-                            <ProjectModal
-                                open={this.state.projectModal}
-                                close={this.closeModal}
-                            />
+                            <Button id="learnMore"  bsStyle="primary" href="https://play.google.com/store/apps/details?id=com.pickoky.game&hl=en" target="_blank">Learn More</Button>
+                            {/*<ProjectModal*/}
+                                {/*open={this.state.projectModal}*/}
+                                {/*close={this.closeModal}*/}
+                            {/*/>*/}
                         </div>
                     </div>
                 </div>
@@ -165,11 +166,11 @@ class MainPage extends React.Component{
                     <a className="contact-blocks" id="contact-github" href="https://github.com/MickelPickelH" target="_blank">
                     </a>
                     <a className="contact-blocks" id="contact-linkedin" href="https://www.linkedin.com/in/jun-ke-michael-huang/" target="_blank">
-
                     </a>
-                    <a className="contact-blocks" id="contact-instagram" href="https://www.instagram.com/mickelpickel_h" target="_blank">
 
-
+                <a className="contact-blocks" id="contact-instagram" href="https://www.instagram.com/mickelpickel_h" target="_blank">
+                    </a>
+                    <a className="contact-blocks" id="contact-resume" href="#" >
                     </a>
                 </div>
 

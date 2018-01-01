@@ -1,15 +1,17 @@
 import React from 'react';
 import Modal from "react-modal"
+import {Button} from 'react-bootstrap';
 import "./Modal.scss";
 
 const style = {
     content : {
-        top                   : '50%',
-        left                  : '50%',
-        right                 : 'auto',
-        bottom                : 'auto',
-        marginRight           : '-50%',
-        transform             : 'translate(-50%, -50%)'
+        top         : '50%',
+        left        : '50%',
+        right       : 'auto',
+        bottom      : 'auto',
+        marginRight : '-50%',
+        transform   : 'translate(-50%, -50%)',
+        maxHeight   : '90%'
     }
 };
 
@@ -34,19 +36,45 @@ class ExperienceModal extends React.Component{
                     onRequestClose={this.props.close}
                     style={style}
                     contentLabel="Modal"
-                    closeTimeoutMS={300}
+                    closeTimeoutMS={200}
                 >
+                    <div className="stack">
+                        <div className="stackHeaderLeft modalHeader" >Stack</div>
+                        <div className="stackHeaderRight modalHeader">Knowledge</div>
+                        <hr/>
+                    </div>
 
-                    <h2 >Hello</h2>
-                    <button onClick={this.props.close}>close</button>
-                    <div>I am a modal</div>
-                    <form>
-                        <input />
-                        <button>tab navigation</button>
-                        <button>stays</button>
-                        <button>inside</button>
-                        <button>the modal</button>
-                    </form>
+                    <div className="stack">
+                        <span id="javaLogo" className="stackElement"></span>
+                        <span className="threeStars stackElement "></span>
+                    </div>
+                    <hr/>
+
+                    <div className="stack">
+                        <span id="javaScriptLogo" className="stackElement"></span>
+                        <span className="threeStars stackElement "></span>
+                    </div>
+                    <hr/>
+
+                    <div className="stack">
+                        <span id="angularJSLogo" className="stackElement"></span>
+                        <span  className="threeStars stackElement "></span>
+                    </div>
+                    <hr/>
+
+                    <div className="stack">
+                        <span id="reactJsLogo" className="stackElement"></span>
+                        <span className="twoStars stackElement "></span>
+                    </div>
+                    <hr/>
+
+                    <div className="stack">
+                        <span id="cplusplusLogo" className="stackElement"></span>
+                        <span className="twoStars stackElement "></span>
+                    </div>
+
+                    <Button id="close" bsStyle="danger" onClick={this.props.close}>close</Button>
+
                 </Modal>
             </div>
         )
