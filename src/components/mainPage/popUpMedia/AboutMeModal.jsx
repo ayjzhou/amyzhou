@@ -50,9 +50,9 @@ class AboutMeModal extends React.Component{
                         <div className="modalText">
                             My name is Michael, I am a second year Computer Engineering student.<br/>
                             I started coding when I was in grade 11 and instantly fell in love with it.
-                            I have done a couple side projects including a game called <a href="https://play.google.com/store/apps/details?id=com.pickoky.game&hl=en" target="_blank">Ballrathon</a> that is currently live on Google
+                            I have done a couple of side projects including a game called <a href="https://play.google.com/store/apps/details?id=com.pickoky.game&hl=en" target="_blank">Ballrathon</a> that is currently live on Google
                             Play Store.<br/><br/>
-                            I also love to exercising my body. Nothing is better than getting
+                            I also love to exercise my body. Nothing is better than getting
                             a good workout in after a whole day of sitting in lectures.
                         </div>
                     </div> : null}
@@ -64,7 +64,7 @@ class AboutMeModal extends React.Component{
                             <div>
                                 <div className="modalText">
                                     I am 5 foot 10 inches, at one point of my life I was 200lbs.<br/>
-                                    Then I started working out. Now it became a part of my life that I must do.<br/>
+                                    Then I started working out. Now it became just a part of my life.<br/>
                                     I like bouldering, weight lifting and swimming.
                                     <br/>
                                     <br/>
@@ -79,17 +79,28 @@ class AboutMeModal extends React.Component{
                         <div>
                             <div className="modalHeader">Transformation</div>
                             <hr/>
-                            <div>
-                                <div className="modalText">
-                                    I am 5 foot 10 inches, at one point of my life I was 200lbs<br/>
-                                    Then I started working out. Now it became a part of my life that I must do.<br/>
-                                    I like bouldering, weight lifting and swimming.
-                                    <br/>
-                                    <br/>
-                                    <span id="warning">Go to the next page to see my transformation. <br/>
-                                        *Warning! I may be wearing a shirt*</span>
+                            <div className="transformationContainer">
+                                <div className="transformationBlock">
+                                    <span className="myPics" id="meBefore"></span>
+                                    <div className="transformationText">2016</div>
+
+                                </div>
+                                <div className="transformationBlock">
+                                    <span className="myPics" id="meAfter"></span>
+                                    <div className="transformationText">2017</div>
                                 </div>
                             </div>
+                            <div className="modalText">
+                                From my ongoing journey, I have learned that there are no short cuts to lose weight and get fit, but there are 2 rules.
+                                <ol>
+                                    <li>Always eat at a caloric deficit, meaning you burn more calories
+                                        than you consume (only if you are trying to lose weight).</li>
+                                    <li>Workout! Being consistent is the key.</li>
+                                </ol>
+                                It was definitely not easy, but it was damn worth it!
+                                You can do it too!
+                            </div>
+
                         </div> : null}
 
 

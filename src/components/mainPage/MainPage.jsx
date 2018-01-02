@@ -133,7 +133,7 @@ class MainPage extends React.Component{
                     <div className="section-profile-right">
                         <div className="section-profile-text">
                             <span className="section-header-text">Experience</span>
-                            I interned at Ethoca as a Software Developer in an Agile environment.
+                            I interned at  <a href="https://www.ethoca.com" target="_blank">Ethoca</a> as a Software Developer in an Agile environment.
                             My daily tasks included using Java, AngularJS and Javascript. I have also
                             learned other interesting things on my spare time!
                             <Button id="learnMore"  bsStyle="primary" onClick={this.openExperienceModal}>Learn More</Button>
@@ -154,10 +154,6 @@ class MainPage extends React.Component{
                             Why not build my own?
                             Ballrathon is an Android game live on Google Play store.
                             <Button id="learnMore"  bsStyle="primary" href="https://play.google.com/store/apps/details?id=com.pickoky.game&hl=en" target="_blank">Learn More</Button>
-                            {/*<ProjectModal*/}
-                                {/*open={this.state.projectModal}*/}
-                                {/*close={this.closeModal}*/}
-                            {/*/>*/}
                         </div>
                     </div>
                 </div>

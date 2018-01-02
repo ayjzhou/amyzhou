@@ -15,6 +15,7 @@
 #navigation{
   float: right;
   margin: 1% 0 1% 1%;
+  font-size: 1.7vh;
 }
 hr{
   clear:both;
@@ -24,6 +25,7 @@ hr{
 #close{
   clear: both;
   float: right;
+  font-size: 1.7vh;
 }
 
 .nextPageAnimation{
@@ -125,6 +127,8 @@ ul {
   text-align: center;
 }
 
+
+
 .scroll{
   overflow-y: auto;
 }
@@ -140,4 +144,36 @@ ul {
 .modalHeader{
   font-size: 3vh;
 }
+
+.transformationContainer{
+  text-align: center;
+}
+.transformationBlock{
+  display: inline-block;
+  margin: 4vh 6vh 0 6vh;
+}
+.transformationText{
+  clear:both;
+  font-size: 3vh;
+  display: block;
+}
+#meBefore{
+  background-image: url("../../../assets/img/meBefore.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#meAfter{
+  background-image: url("../../../assets/img/meAfter.JPG");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.myPics{
+  display:block;
+  width: 20vh;
+  height:35vh;
+  border-radius: 2vh;
+}
+
 
