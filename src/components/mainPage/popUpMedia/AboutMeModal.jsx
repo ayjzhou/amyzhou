@@ -23,16 +23,9 @@ class AboutMeModal extends React.Component{
     constructor(props){
         super(props);
         this.closeModal = this.closeModal.bind(this);
-        this.closeModalAnimation = this.closeModalAnimation.bind(this);
         this.state = {
             aboutMePageState: 0
         }
-    }
-
-    closeModalAnimation(){
-        this.setState({aboutMePageState:0});
-        let ele = document.getElementsByClassName("ReactModalPortal");
-        ele[0].classList.remove("animationFadeOut")
     }
     closeModal(){
         this.props.close();
@@ -52,7 +45,7 @@ class AboutMeModal extends React.Component{
                     >
 
                     {this.state.aboutMePageState===0?
-                    <div>
+                    <div className="animationFadeIn">
                         <div className="modalHeader">About Me</div>
                         <hr/>
                         <div className="modalText">
@@ -64,9 +57,8 @@ class AboutMeModal extends React.Component{
                             a good workout in after a whole day of sitting in lectures.
                         </div>
                     </div> : null}
-
                     {this.state.aboutMePageState===1?
-                        <div>
+                        <div className="animationFadeIn">
                             <div className="modalHeader">More About Me</div>
                             <hr/>
                             <div>
@@ -80,11 +72,10 @@ class AboutMeModal extends React.Component{
                                         *Warning! I may NOT wear a shirt*</span>
                         </div>
                             </div>
-                        </div> : null}
-
+                        </div>  : null }
 
                     {this.state.aboutMePageState===2?
-                        <div>
+                        <div className="animationFadeIn">
                             <div className="modalHeader">Transformation</div>
                             <hr/>
                             <div className="transformationContainer">
@@ -99,7 +90,7 @@ class AboutMeModal extends React.Component{
                                 </div>
                             </div>
                             <div className="modalText">
-                                From my ongoing journey, I have learned that there are no short cuts to lose weight and get fit, but there are 2 rules.
+                                From my ongoing journey, I have learned that there are no short cuts to losing weight and get fit, but there are 2 rules.
                                 <ol>
                                     <li>Always eat at a caloric deficit, meaning you burn more calories
                                         than you consume (only if you are trying to lose weight).</li>
@@ -109,7 +100,7 @@ class AboutMeModal extends React.Component{
                                 You can do it too!
                             </div>
 
-                        </div> : null}
+                        </div> : null }
 
 
                     {this.state.aboutMePageState<2? <Button id="navigation"  bsStyle="primary" onClick={() => this.setState({aboutMePageState:this.state.aboutMePageState+1})}> {">>"} </Button> : null }
