@@ -1,6 +1,5 @@
 import React from 'react';
 import Modal from "react-modal"
-import {Animated} from "react-animated-css";
 import "./Modal.css";
 import {Button} from 'react-bootstrap';
 
@@ -51,7 +50,7 @@ class AboutMeModal extends React.Component{
                         <div className="modalText">
                             My name is Michael, I am a second year Computer Engineering student.<br/>
                             I started coding when I was in grade 11 and instantly fell in love with it.
-                            I have done a couple of side projects including a game called <a href="https://play.google.com/store/apps/details?id=com.pickoky.game&hl=en" target="_blank">Ballrathon</a> that is currently live on Google
+                            I have done a couple of side projects including a game called <a href="https://play.google.com/store/apps/details?id=com.pickoky.game&hl=en" target="_blank" rel="noopener noreferrer">Ballrathon</a> that is currently live on Google
                             Play Store.<br/><br/>
                             I also love to exercise my body. Nothing is better than getting
                             a good workout in after a whole day of sitting in lectures.
@@ -90,7 +89,7 @@ class AboutMeModal extends React.Component{
                                 </div>
                             </div>
                             <div className="modalText">
-                                From my ongoing journey, I have learned that there are no short cuts to losing weight and get fit, but there are 2 rules.
+                                From my ongoing journey, I have learned that there are no short cuts to losing weight or getting fit, but there are 2 rules.
                                 <ol>
                                     <li>Always eat at a caloric deficit, meaning you burn more calories
                                         than you consume (only if you are trying to lose weight).</li>

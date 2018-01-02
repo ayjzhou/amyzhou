@@ -75,7 +75,7 @@ html,body
     width: 20vh;
     font-size:2.5vh;
     display: block;
-    margin-top: 5vh;
+    margin-top: 15px;
 }
 
 .section-header-text{
@@ -198,6 +198,7 @@ nav.stroke  {
 nav.stroke  ul {
     list-style: none;
     text-align: center;
+    padding: 0;
 }
 nav.stroke  ul li {
     display: inline-block;
@@ -218,7 +219,7 @@ nav.stroke ul li a{
     padding: 15px;
     color: #aaa;
     font-weight: 800;
-    font-size: 1.8vh;
+    font-size: 1.2vh;
     text-transform: uppercase;
 }
 nav.stroke ul li a:after{

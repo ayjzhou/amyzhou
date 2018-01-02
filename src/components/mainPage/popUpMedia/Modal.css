@@ -180,9 +180,9 @@ ul {
   overflow-y: auto;
 }
 
-/*.ReactModal__Body--open {*/
-  /*overflow: hidden;*/
-/*}*/
+.ReactModal__Body--open {
+  overflow: hidden;
+}
 
 .modalText{
   font-size: 2vh;
@@ -197,7 +197,7 @@ ul {
 }
 .transformationBlock{
   display: inline-block;
-  margin: 4vh 6vh 0 6vh;
+  padding: 15px 10% 0 10%;
 }
 .transformationText{
   clear:both;
