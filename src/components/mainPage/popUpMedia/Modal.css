@@ -1,17 +1,65 @@
-.ReactModalPortal > div {
-  opacity: 0;
-}
 
 .ReactModalPortal .ReactModal__Overlay {
-  transition: opacity 200ms ease-in-out;
-  background: rgba(0, 0, 0, 0.15);
-  &--after-open {
-    opacity: 1;
-  }
-  &--before-close {
-    opacity: 0;
-  }
+  -webkit-animation: fadein 0.2s linear forwards; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 0.2s linear forwards; /* Firefox < 16 */
+  -ms-animation: fadein 0.2s linear forwards; /* Internet Explorer */
+  -o-animation: fadein 0.2s linear forwards; /* Opera < 12.1 */
+  animation: fadein 0.2s linear forwards;
+
 }
+.animationFadeOut{
+  -webkit-animation: fadeout 0.2s linear forwards; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeout 0.2s linear forwards; /* Firefox < 16 */
+  -ms-animation: fadeout 0.2s linear forwards; /* Internet Explorer */
+  -o-animation: fadeout 0.2s linear forwards; /* Opera < 12.1 */
+  animation: fadeout 0.2s linear forwards;
+}
+@keyframes fadeout {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadeout {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeout {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadeout {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
 #navigation{
   float: right;
   margin: 1% 0 1% 1%;

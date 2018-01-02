@@ -1,7 +1,7 @@
 import React from 'react';
 import Modal from "react-modal"
 import {Animated} from "react-animated-css";
-import "./Modal.scss";
+import "./Modal.css";
 import {Button} from 'react-bootstrap';
 
 
@@ -23,15 +23,23 @@ class AboutMeModal extends React.Component{
     constructor(props){
         super(props);
         this.closeModal = this.closeModal.bind(this);
+        this.closeModalAnimation = this.closeModalAnimation.bind(this);
         this.state = {
             aboutMePageState: 0
         }
     }
 
+    closeModalAnimation(){
+        this.setState({aboutMePageState:0});
+        let ele = document.getElementsByClassName("ReactModalPortal");
+        ele[0].classList.remove("animationFadeOut")
+    }
     closeModal(){
         this.props.close();
-        setTimeout(() => this.setState({aboutMePageState:0})
-        , 200);
+        let ele = document.getElementsByClassName("ReactModalPortal");
+        ele[0].classList.add("animationFadeOut");
+        setTimeout(() => {this.setState({aboutMePageState:0});ele[0].classList.remove("animationFadeOut")}
+        , 210);
     }
     render(){
         return (

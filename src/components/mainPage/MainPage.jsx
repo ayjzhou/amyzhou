@@ -86,28 +86,6 @@ class MainPage extends React.Component{
                     </div>
                 </div>
 
-
-                {/*<Modal*/}
-                    {/*isOpen={this.state.modalIsOpen}*/}
-                    {/*onAfterOpen={this.afterOpenModal}*/}
-                    {/*onRequestClose={this.closeModal}*/}
-                    {/*style={customStyles}*/}
-                    {/*contentLabel="Example Modal"*/}
-                {/*>*/}
-
-                    {/*<h2 ref={subtitle => this.subtitle = subtitle}>Hello</h2>*/}
-                    {/*<button onClick={this.closeModal}>close</button>*/}
-                    {/*<div>I am a modal</div>*/}
-                    {/*<form>*/}
-                        {/*<input />*/}
-                        {/*<button>tab navigation</button>*/}
-                        {/*<button>stays</button>*/}
-                        {/*<button>inside</button>*/}
-                        {/*<button>the modal</button>*/}
-                    {/*</form>*/}
-                {/*</Modal>*/}
-
-
                 <div id="aboutMe-wrapper" className="wrapper">
 
                     <div id="section-profile-pic"></div>
@@ -122,6 +100,7 @@ class MainPage extends React.Component{
                             <AboutMeModal
                                 open={this.state.aboutMeModal}
                                 close={this.closeModal}
+                                index={"0"}
                             />
 
                         </div>
@@ -140,6 +119,7 @@ class MainPage extends React.Component{
                           <ExperienceModal
                                 open={this.state.experienceModal}
                                 close={this.closeModal}
+                                index={"1"}
                           />
                         </div>
                     </div>

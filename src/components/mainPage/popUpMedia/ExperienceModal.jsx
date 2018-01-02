@@ -1,7 +1,7 @@
 import React from 'react';
 import Modal from "react-modal"
 import {Button} from 'react-bootstrap';
-import "./Modal.scss";
+import "./Modal.css";
 
 const style = {
     content : {
@@ -21,10 +21,19 @@ class ExperienceModal extends React.Component{
     constructor(props){
         super(props);
         this.afterOpenModal = this.afterOpenModal.bind(this);
+        this.closeModal = this.closeModal.bind(this);
     }
 
     afterOpenModal(){
         // references are now sync'd and can be accessed.
+    }
+
+    closeModal(){
+        this.props.close();
+        let ele = document.getElementsByClassName("ReactModalPortal");
+        ele[1].classList.add("animationFadeOut");
+        setTimeout(() =>  ele[1].classList.remove("animationFadeOut")
+            , 210);
     }
 
     render(){
@@ -33,7 +42,7 @@ class ExperienceModal extends React.Component{
                 <Modal
                     isOpen={this.props.open}
                     onAfterOpen={this.afterOpenModal}
-                    onRequestClose={this.props.close}
+                    onRequestClose={this.closeModal}
                     style={style}
                     contentLabel="Modal"
                     closeTimeoutMS={200}
@@ -73,7 +82,7 @@ class ExperienceModal extends React.Component{
                         <span className="twoStars stackElement "></span>
                     </div>
 
-                    <Button id="close" bsStyle="danger" onClick={this.props.close}>close</Button>
+                    <Button id="close" bsStyle="danger" onClick={this.closeModal}>close</Button>
 
                 </Modal>
             </div>
