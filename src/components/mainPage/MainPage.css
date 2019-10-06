@@ -18,7 +18,7 @@ html,body
     display:inline-block;
     background-color: whitesmoke;
     position: relative;
-    margin-top:44px;
+    /*margin-top:44px;*/
     background-color: #e1e8f0;
 }
 
@@ -238,5 +238,13 @@ nav.stroke ul li a:hover:after {
     width: 100%;
 }
 
+.landing{
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
+canvas{
+    position: absolute;
+}
 
 

@@ -1,6 +1,17 @@
 import React from 'react';
 import Intro from './intro/Intro';
 import MainPage from './mainPage/MainPage';
+import Card, {
+    CardPrimaryContent,
+    CardMedia,
+    CardActions,
+    CardActionButtons,
+    CardActionIcons,
+} from "@material/react-card";
+import '@material/react-card/index.scss';
+import '@material/react-card/dist/card.css';
+
+
 
 
 class App extends React.Component {
@@ -18,18 +29,10 @@ class App extends React.Component {
     }
 
     render() {
-        return(
-            <div>
-                {this.state.transitionalState === 0 || this.state.transitionalState ===1?
-                    <Intro transitionalState={this.state.transitionalState}
-                           date={this.state.date}
-                           changeTransitionalState={(text) => this.changeTransitionalState(text)}
-                    />:
-                    null
-                }
 
-                {this.state.transitionalState === 2? <MainPage/> : null}
-            </div>
+        return(
+
+            <MainPage/>
         )
     }
 }

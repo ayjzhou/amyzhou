@@ -1,0 +1,10 @@
+.top-nav-bar{
+  padding: 3em 0 1em 0;
+  color: white;
+}
+.top-nav-bar-button{
+  color: white;
+}
+.top-nav-bar-button:hover{
+  color: grey;
+}
