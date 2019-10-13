@@ -185,6 +185,15 @@ html,body
     background-color:  #bfbfbf;
 }
 
+/*@font-face {*/
+/*    font-family: Montserrat;*/
+/*    src: url(../../assets/Montserrat/Montserrat-Regular.ttf);*/
+/*}*/
+
+body {
+    font-family: Montserrat !important;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -240,8 +249,8 @@ nav.stroke ul li a:hover:after {
 
 .landing{
     height: 100vh;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     margin-bottom: 60px;
 }
 .my-card{
@@ -253,11 +262,12 @@ canvas{
 }
 
 .main-page-wrapper{
-    max-width: 1238px;
+    /*max-width: 1238px;*/
     margin: 0 auto;
 }
 .cards-wrapper{
     text-align: center;
 }
+
 
 

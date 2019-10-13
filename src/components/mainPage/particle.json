@@ -22,6 +22,9 @@
       "speed": 1,
       "direction": "top",
       "out_mode": "out"
+    },
+    "color": {
+      "value": "#AAFAC8"
     }
   },
   "interactivity": {

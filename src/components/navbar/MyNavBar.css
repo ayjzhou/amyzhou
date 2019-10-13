@@ -1,9 +1,9 @@
 .top-nav-bar{
   padding: 3em 0 1em 0;
-  color: white;
+  color: black;
 }
 .top-nav-bar-button{
-  color: white;
+  color: black;
 }
 .top-nav-bar-button:hover{
   color: grey;

@@ -1,21 +1,7 @@
 import React from 'react';
 import './MainPage.css'
-import me from '../../assets/img/me.jpg';
-import {Animated} from "react-animated-css";
-import AboutMeModal from './popUpMedia/AboutMeModal';
-import ExperienceModal from './popUpMedia/ExperienceModal';
+import {Container} from 'react-bootstrap';
 
-
-
-import Card, {
-    CardPrimaryContent,
-    CardMedia,
-    CardActions,
-    CardActionButtons,
-    CardActionIcons,
-} from "@material/react-card";
-import IconButton from "@material/react-icon-button";
-import MaterialIcon from "@material/react-icon-button";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@material/react-card/index.scss';
 import particlesParams from './particle'
@@ -69,20 +55,17 @@ class MainPage extends React.Component{
     render() {
         return(
             <div className="main-page-wrapper">
+                <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"/>
                 <div className="landing">
                     <Particles
                         params={particlesParams} />
                     <MyNavBar/>
                     <LandingBody/>
                 </div>
-                <div className="cards-wrapper">
-                    {/*<Col lg={6} sm={6} md={6} className="my-card">*/}
+                    <div className="cards-wrapper">
                         <MyCard title="BB 1" text="I am cute"/>
-                    {/*</Col>*/}
-                    {/*<Col lg={6} sm={6} md={6} className="my-card">*/}
                         <MyCard title="BB 2"/>
-                    {/*</Col>*/}
-                </div>
+                    </div>
             </div>
 
         )
