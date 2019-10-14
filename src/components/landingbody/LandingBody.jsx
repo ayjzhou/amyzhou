@@ -16,7 +16,9 @@ class LandingBody extends React.Component{
         this.titleReftwo = React.createRef();
 
         this.toggleCursor = (ref, state) => {
-            ref.current.rootElement.current.nextSibling.style.opacity = state;
+            if (ref.current) {
+                ref.current.rootElement.current.nextSibling.style.opacity = state;
+            }
         }
     }
     componentDidMount() {

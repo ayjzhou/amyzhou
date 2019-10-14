@@ -5,6 +5,7 @@ import '@material/react-card/index.scss';
 import './MyNavBar.css';
 
 import {Button, Nav, Container, Row, Col} from 'react-bootstrap';
+import {Link} from "react-router-dom";
 
 class MyNavBar extends React.Component{
     constructor(props){
@@ -20,13 +21,13 @@ class MyNavBar extends React.Component{
                         <Col >
                             <Nav className="justify-content-end " activeKey="/home">
                                 <Nav.Item>
-                                    <Nav.Link href="/home" className="top-nav-bar-button">Active</Nav.Link>
+                                    <Link to="/" className="top-nav-bar-button">Home</Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="link-1" className="top-nav-bar-button">Link</Nav.Link>
+                                    <Link to="/about" className="top-nav-bar-button">About</Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="link-2" className="top-nav-bar-button">Link</Nav.Link>
+                                    <Link to="/contact" className="top-nav-bar-button">Contact</Link>
                                 </Nav.Item>
                             </Nav>
                         </Col>

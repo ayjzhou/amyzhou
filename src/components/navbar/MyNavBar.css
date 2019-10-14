@@ -4,6 +4,7 @@
 }
 .top-nav-bar-button{
   color: black;
+  padding: .5rem 1rem;
 }
 .top-nav-bar-button:hover{
   color: grey;

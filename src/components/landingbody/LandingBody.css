@@ -12,10 +12,12 @@
     }
 }
 .typed-text-name{
-    font-size: 2rem;
+    font-size: 3.5rem;
+    font-weight: bold;
     display: block;
 }
 .typed-text-description{
-    font-size: 2rem;
+    font-size: 3.5rem;
     display: block;
+    font-weight: bold;
 }

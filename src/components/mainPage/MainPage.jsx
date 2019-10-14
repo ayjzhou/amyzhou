@@ -55,11 +55,9 @@ class MainPage extends React.Component{
     render() {
         return(
             <div className="main-page-wrapper">
-                <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"/>
                 <div className="landing">
                     <Particles
                         params={particlesParams} />
-                    <MyNavBar/>
                     <LandingBody/>
                 </div>
                     <div className="cards-wrapper">
