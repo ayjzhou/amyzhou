@@ -27,7 +27,7 @@ class LandingBody extends React.Component{
 
     render() {
         return(
-            <div className="landing-body">
+            <div className="landing-body container">
                 <div>
                     <br/>
                     <Typed

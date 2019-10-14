@@ -18,7 +18,7 @@ class MyCard extends React.Component{
 
     render() {
         return(
-            <div className="my-card-wrapper hover-up">
+            <div className="my-card-wrapper hover-up container">
                 <Card style={{display: 'inline-block' }}>
                     <Card.Img variant="top" src={cutebb} />
                     <Card.Body>
@@ -28,12 +28,6 @@ class MyCard extends React.Component{
                         </Card.Text>
                     </Card.Body>
                 </Card>
-                {/*<UserCard*/}
-                {/*   href="Google.com"*/}
-                {/*   header={me}*/}
-                {/*   positionName="Hi This is amy and this is my project. I am using adobe photoshop for this amazing project please check it out"*/}
-                {/*   float={true}*/}
-                {/*/>*/}
             </div>
 
         )

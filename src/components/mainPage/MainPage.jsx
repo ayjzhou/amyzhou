@@ -9,6 +9,7 @@ import Particles from 'react-particles-js';
 import MyNavBar from '../navbar/MyNavBar';
 import LandingBody from "../landingbody/LandingBody";
 import MyCard from "../mycard/MyCard";
+import About from "../about/About";
 import {Col} from "react-bootstrap";
 
 
@@ -23,15 +24,19 @@ class MainPage extends React.Component{
     render() {
         return(
             <div className="main-page-wrapper">
-                <div className="landing">
+                <MyNavBar/>
+                <div className="landing" id="landing">
                     <Particles
                         params={particlesParams} />
                     <LandingBody/>
                 </div>
-                    <div className="cards-wrapper">
-                        <MyCard title="BB 1" text="I am cute"/>
-                        <MyCard title="BB 2"/>
-                    </div>
+                <div className="landing">
+                    <About/>
+                </div>
+                <div className="cards-wrapper" id="projects">
+                    <MyCard title="BB 1" text="I am cute"/>
+                    <MyCard title="BB 2"/>
+                </div>
             </div>
 
         )

@@ -6,6 +6,8 @@ import './MyNavBar.css';
 
 import {Button, Nav, Container, Row, Col} from 'react-bootstrap';
 import {Link} from "react-router-dom";
+import AnchorLink from 'react-anchor-link-smooth-scroll'
+
 
 class MyNavBar extends React.Component{
     constructor(props){
@@ -21,13 +23,16 @@ class MyNavBar extends React.Component{
                         <Col >
                             <Nav className="justify-content-end " activeKey="/home">
                                 <Nav.Item>
-                                    <Link to="/" className="top-nav-bar-button">Home</Link>
+                                    <AnchorLink href="#landing" className="top-nav-bar-button">Home</AnchorLink>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Link to="/about" className="top-nav-bar-button">About</Link>
+                                <AnchorLink href="#about" className="top-nav-bar-button">About</AnchorLink>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Link to="/contact" className="top-nav-bar-button">Contact</Link>
+                                    <AnchorLink href="#projects" className="top-nav-bar-button">Projects</AnchorLink>
+                                </Nav.Item>
+                                <Nav.Item>
+                                    <AnchorLink href="#contact" className="top-nav-bar-button">Contact</AnchorLink>
                                 </Nav.Item>
                             </Nav>
                         </Col>
