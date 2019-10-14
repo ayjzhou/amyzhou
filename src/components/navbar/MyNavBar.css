@@ -8,4 +8,5 @@
 }
 .top-nav-bar-button:hover{
   color: grey;
+  text-decoration: none;
 }
