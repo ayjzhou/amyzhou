@@ -10,6 +10,9 @@ import MyNavBar from '../navbar/MyNavBar';
 import LandingBody from "../landingbody/LandingBody";
 import MyCard from "../mycard/MyCard";
 import About from "../about/About";
+import {
+    Link
+} from "react-router-dom";
 import {Col} from "react-bootstrap";
 
 
@@ -20,11 +23,10 @@ class MainPage extends React.Component{
     constructor(props){
         super(props);
     }
-
     render() {
         return(
             <div className="main-page-wrapper">
-                <MyNavBar/>
+                <MyNavBar show={true}/>
                 <div className="landing" id="landing">
                     <Particles
                         params={particlesParams} />
@@ -34,8 +36,14 @@ class MainPage extends React.Component{
                     <About/>
                 </div>
                 <div className="cards-wrapper" id="projects">
-                    <MyCard title="BB 1" text="I am cute"/>
-                    <MyCard title="BB 2"/>
+                    {/*<Link to="/project_one">*/}
+                    <a href="/project_one">
+                        <MyCard title="BB 1" text="I am cute"/>
+                    </a>
+                    {/*</Link>*/}
+                    <a href="/project_two">
+                        <MyCard title="BB 2"/>
+                    </a>
                 </div>
             </div>
 
