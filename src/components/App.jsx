@@ -1,15 +1,10 @@
 import React from 'react';
 import Intro from './intro/Intro';
 import MainPage from './mainPage/MainPage';
-import Card, {
-    CardPrimaryContent,
-    CardMedia,
-    CardActions,
-    CardActionButtons,
-    CardActionIcons,
-} from "@material/react-card";
+
 import '@material/react-card/index.scss';
 import '@material/react-card/dist/card.css';
+import {Card} from 'react-bootstrap';
 import './App.css';
 import shiba from '../assets/img/favicon.gif';
 import email from '../assets/img/email.png';
@@ -24,6 +19,7 @@ import {
     Link
 } from "react-router-dom";
 import ProjectPage from "./projectPage/projectPage";
+
 
 class App extends React.Component {
     constructor(props){
@@ -56,11 +52,18 @@ class App extends React.Component {
                     <footer className="my-footer" id="contact">
                         <div className={"my-contacts"}>
                             <div className="footer-icon">
-
-                                <img src={email} width="40px" className="footer-icon-style"/>
-                                <img src={linkedin} width="40px" className="footer-icon-style"/>
-                                <img src={twitter} width="40px" className="footer-icon-style"/>
-                                <img src={github} width="40px" className="footer-icon-style"/>
+                                <a target="_blank" href="mailto:ayjzhou@gmail.com" className="footer-icon-anchor">
+                                    <Card.Img src={email}  className="footer-icon-img" />
+                                </a>
+                                <a target="_blank" href="https://www.linkedin.com/in/amyyjzhou/" className="footer-icon-anchor">
+                                    <Card.Img src={linkedin}  className="footer-icon-img"/>
+                                </a>
+                                {/*<a target="_blank" className="footer-icon-anchor">*/}
+                                {/*    <Card.Img src={twitter}  className="footer-icon-img"/>*/}
+                                {/*</a>*/}
+                                <a target="_blank" href="https://github.com/ayjzhou" className="footer-icon-anchor">
+                                    <Card.Img src={github} className="footer-icon-img"/>
+                                </a>
                             </div>
                         </div>
 
