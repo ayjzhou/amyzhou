@@ -23,6 +23,9 @@ span.wave {
 .my-story{
     color: #696969;
 }
+.my-story-location{
+    display: inline-block;
+}
 
 .about-body{
     display: flex;
@@ -30,7 +33,7 @@ span.wave {
     min-height: calc(100vh - 50vh);
     margin: 0 auto;
     width: 90%;
-
+    padding: 4rem 0
 }
 
 .about-image{
@@ -64,7 +67,7 @@ span.wave {
     .about-body{
         width: 950px;
         margin: 0 auto;
-        padding-top: 100px;
+        padding: 8rem 0;
     }
 
     .about-image-container{

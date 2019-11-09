@@ -55,10 +55,6 @@ class App extends React.Component {
 
                     <footer className="my-footer" id="contact">
                         <div className={"my-contacts"}>
-                        <h4>
-                            Don't be a stranger. Let's connect! /*BB CAN U MAKE A CONTAINER FOR THIS */
-                            <span className="hot">  ☕️</span>
-                        </h4>
                             <div className="footer-icon">
 
                                 <img src={email} width="40px" className="footer-icon-style"/>
@@ -66,7 +62,8 @@ class App extends React.Component {
                                 <img src={twitter} width="40px" className="footer-icon-style"/>
                                 <img src={github} width="40px" className="footer-icon-style"/>
                             </div>
-                    </div>
+                        </div>
+
                         <p>Coded with lots of coffee and lots of love.</p>
                         <img src={shiba} width="50px"/>
                     </footer>

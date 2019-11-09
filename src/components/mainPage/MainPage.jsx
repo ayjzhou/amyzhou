@@ -32,7 +32,7 @@ class MainPage extends React.Component{
                         params={particlesParams} />
                     <LandingBody/>
                 </div>
-                <div className="landing">
+                <div className="about-wrapper">
                     <About/>
                 </div>
                 <div className="cards-wrapper" id="projects">

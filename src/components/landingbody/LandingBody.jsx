@@ -4,7 +4,8 @@ import '@material/react-card/index.scss';
 import './LandingBody.css'
 import Typed from 'react-typed';
 
-import {Button, Nav, Container, Row, Col} from 'react-bootstrap';
+import {Button, Nav, Container, Row, Col, Card} from 'react-bootstrap';
+import cutebb from "../../assets/img/cutebb.png";
 
 class LandingBody extends React.Component{
     constructor(props){
@@ -53,7 +54,9 @@ class LandingBody extends React.Component{
                         preStringTyped={() => this.toggleCursor(this.titleReftwo, "1")}>
                     </Typed>
                 </div>
-
+                <div className="landing-body-img-wrapper">
+                    <Card.Img variant="top"  className="landing-body-img" src={cutebb} />
+                </div>
             </div>
 
         )
