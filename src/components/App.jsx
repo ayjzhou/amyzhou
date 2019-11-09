@@ -36,6 +36,8 @@ class App extends React.Component {
             <Router>
                 <div>
                     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"/>
+                    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"/>
+                    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet"/>
                     <Switch>
                         <Route path="/project_one">
                             <MyNavBar show={false}/>
