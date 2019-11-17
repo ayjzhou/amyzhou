@@ -23,12 +23,12 @@ class ProjectPage extends React.Component{
         return(
             <div>
                 <div className="landing" style={{"text-align": "center"}}>
-                    <Particles params={particlesParams}/>
+                    {/*<Particles params={particlesParams}/>*/}
                     <Card style={{display: 'inline-block', width: "40%", cursor: "default"}}>
                         <Card.Img variant="top" src={cutebb} />
                     </Card>
                 </div>
-
+                <div>
                 <Text title="MOTIVATION" content="THIS IS MY MOTIVATIONTHIS IS MY MOTIVATIONTHIS IS MY MOTIVATION
                 THIS IS MY MOTIVATIONTHIS IS MY MOTIVATIONTHIS IS MY MOTIVATIONTHIS IS MY MOTIVATION
                 THIS IS MY MOTIVATIONTHIS IS MY MOTIVATIONTHIS IS MY MOTIVATION"/>
@@ -37,6 +37,7 @@ class ProjectPage extends React.Component{
 
                 <Text title="MOTIVATION2" content="THIS IS MY MOTIVATION2"/>
                 <Text title="MOTIVATION3" content="THIS IS MY MOTIVATION3"/>
+                </div>
 
             </div>
 
