@@ -7,10 +7,10 @@ import '@material/react-card/dist/card.css';
 import {Card} from 'react-bootstrap';
 import './App.css';
 import shiba from '../assets/img/favicon.gif';
-import email from '../assets/img/email.png';
-import linkedin from '../assets/img/linkedin.png';
+import email from '../assets/img/gmail.svg';
+import linkedin from '../assets/img/linkedin.svg';
 import twitter from '../assets/img/twitter.png';
-import github from '../assets/img/github.png';
+import github from '../assets/img/github.svg';
 import MyNavBar from './navbar/MyNavBar';
 import {
     BrowserRouter as Router,
@@ -55,7 +55,7 @@ class App extends React.Component {
                         <div className={"my-contacts"}>
                             <div className="footer-icon">
                                 <a target="_blank" href="mailto:ayjzhou@gmail.com" className="footer-icon-anchor">
-                                    <Card.Img src={email}  className="footer-icon-img" />
+                                    <Card.Img src={email}  className="footer-icon-img hover-up" />
                                 </a>
                                 <a target="_blank" href="https://www.linkedin.com/in/amyyjzhou/" className="footer-icon-anchor">
                                     <Card.Img src={linkedin}  className="footer-icon-img"/>

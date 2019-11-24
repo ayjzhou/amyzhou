@@ -6,6 +6,10 @@ import Typed from 'react-typed';
 
 import {Button, Nav, Container, Row, Col, Card} from 'react-bootstrap';
 import cutebb from "../../assets/img/cutebb.png";
+import me from "../../assets/img/me.svg";
+import me3 from "../../assets/img/me3.svg";
+import me4 from "../../assets/img/me4.svg";
+
 
 class LandingBody extends React.Component{
     constructor(props){
@@ -55,7 +59,7 @@ class LandingBody extends React.Component{
                     </Typed>
                 </div>
                 <div className="landing-body-img-wrapper">
-                    <Card.Img variant="top"  className="landing-body-img" src={cutebb} />
+                    <Card.Img variant="top"  className="landing-body-img" src={me3git} />
                 </div>
             </div>
 
