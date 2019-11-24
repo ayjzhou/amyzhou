@@ -15,7 +15,7 @@ class Text extends React.Component{
     render() {
         return(
             <div style={{"margin-bottom":"3rem"}}>
-                <Col lg={12} style={{padding: "0 20rem"}}>
+                <Col lg={12} style={{padding: "0 10%"}}>
                     <h2>
                         {this.props.title}
                     </h2>

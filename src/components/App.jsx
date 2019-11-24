@@ -43,8 +43,9 @@ class App extends React.Component {
                             <MyNavBar show={false}/>
                             <ProjectPage/>
                         </Route>
-                        <Route path="/project-two">
-                            <Users />
+                        <Route path="/project_two">
+                            <MyNavBar show={false}/>
+                            <ProjectPage />
                         </Route>
                         <Route path="/">
                             <MainPage/>
