@@ -49,7 +49,7 @@ class LandingBody extends React.Component{
                         startDelay= {900}
                         strings={[
                             'I design stuff',
-                            'I plan stuff',
+                            'I research stuff',
                             "I break stuff"]}
                         typeSpeed={30}
                         backSpeed={30}
@@ -59,7 +59,7 @@ class LandingBody extends React.Component{
                     </Typed>
                 </div>
                 <div className="landing-body-img-wrapper">
-                    <Card.Img variant="top"  className="landing-body-img" src={me3git} />
+                    <Card.Img variant="top"  className="landing-body-img" src={me3} />
                 </div>
             </div>
 

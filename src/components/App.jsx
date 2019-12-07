@@ -7,10 +7,10 @@ import '@material/react-card/dist/card.css';
 import {Card} from 'react-bootstrap';
 import './App.css';
 import shiba from '../assets/img/favicon.gif';
-import email from '../assets/img/gmail.svg';
-import linkedin from '../assets/img/linkedin.svg';
+import email from '../assets/img/email.png';
+import linkedin from '../assets/img/linkedin.png';
 import twitter from '../assets/img/twitter.png';
-import github from '../assets/img/github.svg';
+import github from '../assets/img/github.png';
 import MyNavBar from './navbar/MyNavBar';
 import {
     BrowserRouter as Router,

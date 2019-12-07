@@ -38,11 +38,11 @@ class MainPage extends React.Component{
                 <div className="cards-wrapper" id="projects">
                     {/*<Link to="/project_one">*/}
                     <a href="/project_one">
-                        <MyCard title="BB 1" text="I am cute"/>
+                        <MyCard title="PC Express Search"/>
                     </a>
                     {/*</Link>*/}
                     <a href="/project_two">
-                        <MyCard title="BB 2"/>
+                        <MyCard title="Circles"/>
                     </a>
                 </div>
             </div>
