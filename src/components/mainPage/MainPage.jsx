@@ -40,7 +40,7 @@ class MainPage extends React.Component{
                     </a>
                     {/*</Link>*/}
 
-                    <MyCard imgSrc={comingsoon} title="Circles"/>
+                    <MyCard imgSrc={comingsoon} title="coming soon"/>
 
                 </div>
             </div>
