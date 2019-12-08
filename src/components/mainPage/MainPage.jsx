@@ -10,10 +10,8 @@ import MyNavBar from '../navbar/MyNavBar';
 import LandingBody from "../landingbody/LandingBody";
 import MyCard from "../mycard/MyCard";
 import About from "../about/About";
-import {
-    Link
-} from "react-router-dom";
-import {Col} from "react-bootstrap";
+import ldbanner from "../../assets/mockup final/ldbanner.svg";
+import comingsoon from '../../assets/img/coming_soon.svg';
 
 
 
@@ -38,12 +36,12 @@ class MainPage extends React.Component{
                 <div className="cards-wrapper" id="projects">
                     {/*<Link to="/project_one">*/}
                     <a href="/project_one">
-                        <MyCard title="PC Express Search"/>
+                        <MyCard  imgSrc={ldbanner} title="PC Express Search"/>
                     </a>
                     {/*</Link>*/}
-                    <a href="/project_two">
-                        <MyCard title="Circles"/>
-                    </a>
+
+                    <MyCard imgSrc={comingsoon} title="Circles"/>
+
                 </div>
             </div>
 

@@ -6,7 +6,6 @@ import '@material/react-card/index.scss';
 import './MyCard.css';
 import cutebb from '../../assets/img/cutebb.png';
 import banner_LD from "../../assets/mockup final/banner_LD.jpg";
-import ldbanner from "../../assets/mockup final/ldbanner.svg";
 
 
 
@@ -24,9 +23,9 @@ class MyCard extends React.Component{
         return(
             <div className="my-card-wrapper hover-up container">
                 <Card style={{display: 'inline-block' }}>
-                    <Card.Img variant="top" src={ldbanner} />
+                    <Card.Img variant="top" src={this.props.imgSrc} />
                     <Card.Body>
-                        <Card.Title>{this.props.title}</Card.Title>
+                        <Card.Title style={{color: '#696969' }}>{this.props.title}</Card.Title>
                         <Card.Text>
                             {this.props.text || ""}
                         </Card.Text>

@@ -11,23 +11,32 @@ import "./text.css";
 class Text extends React.Component{
     constructor(props){
         super(props);
+        this.statement = props.statement
     }
     render() {
-        console.log((this.props.children));
+
         return(
             <div style={{"marginBottom":"3rem"}}>
                 <Col style={{padding: "0 0"}}>
-                    <h4 style={{fontWeight:"bold"}}>
-                        {this.props.header}
-                    </h4>
-                    <h3 style={{fontSize: "1rem", color:"#3943B7" +
-                            ""}}>
-                        {this.props.title}
-                    </h3>
-                    <p>
-                        {this.props.content}
-                        {this.props.children}
-                    </p>
+                    {this.props.header &&
+                        <h4 style={{fontWeight:"bold"}}>
+                            {this.props.header}
+                        </h4>
+                    }
+
+                    {this.props.title &&
+                        <h3 style={{fontSize: "1rem", fontWeight: "bold", color:"#6290C8" +
+                                ""}}>
+                            {this.props.title}
+                        </h3>
+                    }
+                    {(this.props.content || this.props.children) &&
+                        <p className={this.statement&&this.statement===true&&"statement"} >
+                            {this.props.content}
+                            {this.props.children}
+                        </p>
+                    }
+
                 </Col>
             </div>
 
