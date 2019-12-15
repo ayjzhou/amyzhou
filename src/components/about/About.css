@@ -84,3 +84,20 @@ span.wave {
 body{
     font-family: muli !important;
 }
+
+a {
+    color: #696969;
+}
+a:visited {
+    color: #696969;
+}
+a:hover, a:active, a:focus {
+    color:#6290C8;
+}
+span.hot {
+    animation-name: air-animation;
+    animation-duration: 5s;
+    /*animation-iteration-count: infinite;*/
+    transform-origin: 70% 70%;
+    display: inline-block;
+}

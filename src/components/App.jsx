@@ -18,7 +18,7 @@ import {
     Route,
     Link
 } from "react-router-dom";
-import ProjectPage from "./projectPage/projectPage";
+import Ldpc from "./projectPage/ldpc";
 
 
 class App extends React.Component {
@@ -41,11 +41,11 @@ class App extends React.Component {
                     <Switch>
                         <Route path="/project_one">
                             <MyNavBar show={false}/>
-                            <ProjectPage/>
+                            <Ldpc/>
                         </Route>
                         <Route path="/project_two">
                             <MyNavBar show={false}/>
-                            <ProjectPage />
+                            <Ldpc />
                         </Route>
                         <Route path="/">
                             <MainPage/>

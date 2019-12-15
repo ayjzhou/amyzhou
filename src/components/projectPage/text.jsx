@@ -5,7 +5,7 @@ import Typed from 'react-typed';
 
 import {Button, Nav, Container, Row, Col, Card} from 'react-bootstrap';
 import MyNavBar from "../navbar/MyNavBar";
-import "./projectPage.css";
+import "./ldpc.css";
 import "./text.css";
 
 class Text extends React.Component{

@@ -12,7 +12,7 @@ import MyCard from "../mycard/MyCard";
 import About from "../about/About";
 import ldbanner from "../../assets/mockup final/ldbanner.svg";
 import comingsoon from '../../assets/img/coming_soon.svg';
-
+import banner from "../../assets/mockup final/banner.jpg";
 
 
 
@@ -36,7 +36,7 @@ class MainPage extends React.Component{
                 <div className="cards-wrapper" id="projects">
                     {/*<Link to="/project_one">*/}
                     <a href="/project_one">
-                        <MyCard  imgSrc={ldbanner} title="PC Express Search"/>
+                        <MyCard  imgSrc={banner} title="PC Express Search"/>
                     </a>
                     {/*</Link>*/}
 
