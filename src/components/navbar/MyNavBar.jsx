@@ -21,7 +21,7 @@ class MyNavBar extends React.Component{
                 <Container>
                     <Row>
                         <Col >
-                            <Navbar collapseOnSelect expand="sm">
+                            <Navbar collapseOnSelect expand="sm" sticky="top">
                                 <Link to="/">
                                     <Navbar.Brand>amy zhou</Navbar.Brand>
                                 </Link>
@@ -38,6 +38,9 @@ class MyNavBar extends React.Component{
                                     <Nav.Item>
                                         <AnchorLink href="#projects" className="top-nav-bar-button">Projects</AnchorLink>
                                     </Nav.Item>
+                                    {/*<Nav.Item>*/}
+                                    {/*    <AnchorLink href="#challenges" className="top-nav-bar-button">Challenges</AnchorLink>*/}
+                                    {/*</Nav.Item>*/}
                                     <Nav.Item>
                                         <AnchorLink href="#contact" className="top-nav-bar-button">Contact</AnchorLink>
                                     </Nav.Item>

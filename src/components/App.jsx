@@ -9,7 +9,6 @@ import './App.css';
 import shiba from '../assets/img/favicon.gif';
 import email from '../assets/img/email.png';
 import linkedin from '../assets/img/linkedin.png';
-import twitter from '../assets/img/twitter.png';
 import github from '../assets/img/github.png';
 import MyNavBar from './navbar/MyNavBar';
 import {
@@ -19,6 +18,10 @@ import {
     Link
 } from "react-router-dom";
 import Ldpc from "./projectPage/ldpc";
+import Circles from "./projectPage/circles";
+import Moodily from "./projectPage/moodily";
+import Parkit from "./projectPage/parkit";
+import Petco from "./projectPage/petco";
 
 
 class App extends React.Component {
@@ -45,7 +48,19 @@ class App extends React.Component {
                         </Route>
                         <Route path="/project_two">
                             <MyNavBar show={false}/>
-                            <Ldpc />
+                            <Circles />
+                        </Route>
+                        <Route path="/project_three">
+                            <MyNavBar show={false}/>
+                            <Moodily />
+                        </Route>
+                        <Route path="/project_four">
+                            <MyNavBar show={false}/>
+                            <Parkit />
+                        </Route>
+                        <Route path="/project_five">
+                            <MyNavBar show={false}/>
+                            <Petco />
                         </Route>
                         <Route path="/">
                             <MainPage/>
@@ -61,9 +76,6 @@ class App extends React.Component {
                                 <a target="_blank" href="https://www.linkedin.com/in/amyyjzhou/" className="footer-icon-anchor">
                                     <Card.Img src={linkedin}  className="footer-icon-img"/>
                                 </a>
-                                {/*<a target="_blank" className="footer-icon-anchor">*/}
-                                {/*    <Card.Img src={twitter}  className="footer-icon-img"/>*/}
-                                {/*</a>*/}
                                 <a target="_blank" href="https://github.com/ayjzhou" className="footer-icon-anchor">
                                     <Card.Img src={github} className="footer-icon-img"/>
                                 </a>

@@ -5,7 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '@material/react-card/index.scss';
 import './MyCard.css';
 import cutebb from '../../assets/img/cutebb.png';
-import banner_LD from "../../assets/mockup final/banner_LD.jpg";
+import banner_LD from "../../assets/pcexp/banner_LD.jpg";
+
 
 
 

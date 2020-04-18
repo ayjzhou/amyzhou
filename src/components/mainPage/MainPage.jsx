@@ -1,7 +1,5 @@
 import React from 'react';
 import './MainPage.css'
-import {Container} from 'react-bootstrap';
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@material/react-card/index.scss';
 import particlesParams from './particle'
@@ -10,10 +8,13 @@ import MyNavBar from '../navbar/MyNavBar';
 import LandingBody from "../landingbody/LandingBody";
 import MyCard from "../mycard/MyCard";
 import About from "../about/About";
-import ldbanner from "../../assets/mockup final/ldbanner.svg";
-import comingsoon from '../../assets/img/coming_soon.svg';
-import banner from "../../assets/mockup final/banner.jpg";
-
+import circlesbanner1 from '../../assets/circles_f/circlesbanner_.jpg';
+import banner from "../../assets/pcexp/ldbanner_.jpg";
+import moodilybanner from '../../assets/moodily/moodilybanner.png';
+import parkitbanner from '../../assets/parkit/parkitbanner_.jpg';
+import petcobanner from '../../assets/petco/petcobanner.jpg';
+import {Button, Nav, Container, Row, Col, Card} from 'react-bootstrap';
+import coupletcs from '../../assets/img/coming_soon.svg';
 
 
 
@@ -39,9 +40,21 @@ class MainPage extends React.Component{
                         <MyCard  imgSrc={banner} title="PC Express Search"/>
                     </a>
                     {/*</Link>*/}
-
-                    <MyCard imgSrc={comingsoon} title="coming soon"/>
-
+                    <a href="/project_two">
+                        <MyCard imgSrc={circlesbanner1} title="Circles"/>
+                    </a>
+                    <a href="/project_three">
+                        <MyCard imgSrc={moodilybanner} title="Moodily"/>
+                    </a>
+                    <a href="/project_four">
+                        <MyCard imgSrc={parkitbanner} title="Park It"/>
+                    </a>
+                    <a href="/project_five">
+                        <MyCard imgSrc={petcobanner} title="Pet&Co."/>
+                    </a>
+                    <a href="/project_six">
+                        <MyCard imgSrc={coupletcs} title="CoupLet"/>
+                    </a>
                 </div>
             </div>
 

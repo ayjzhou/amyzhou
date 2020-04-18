@@ -5,39 +5,37 @@ import Typed from 'react-typed';
 import {Button, Nav, Container, Row, Col, Card} from 'react-bootstrap';
 import MyNavBar from "../navbar/MyNavBar";
 import "./ldpc.css";
-import banner_LD from "../../assets/mockup final/banner_LD.jpg";
 import Particles from "react-particles-js";
 import particlesParams from "../mainPage/particle";
+import banner from "../../assets/pcexp/ldbanner_.jpg";
 import Text from "./text";
 import "./text.css";
-import ep from "../../assets/mockup final/empathy map.jpg";
-import jm from "../../assets/mockup final/jmap.png";
-import idea from "../../assets/mockup final/feature ideation.svg";
-import uf from "../../assets/mockup final/uf.png";
-import rough from "../../assets/mockup final/rough.jpg";
-import wf1 from  "../../assets/mockup final/w1.svg";
-import wf2 from  "../../assets/mockup final/w2.svg";
-import wf3 from  "../../assets/mockup final/w3.svg";
-import chat1 from  "../../assets/mockup final/f_aichat1.png";
-import chat2 from  "../../assets/mockup final/f_aichat2.png";
-import chat3 from  "../../assets/mockup final/f_aichat3.png";
-import chat4 from  "../../assets/mockup final/f_aichat4.png";
-import sugg1 from  "../../assets/mockup final/f_sugg1a.png";
-import sugg2 from  "../../assets/mockup final/f_sugg1b.png";
-import sugg3 from  "../../assets/mockup final/f_sugg1c.png";
-import sugg4 from  "../../assets/mockup final/f_sugg1d.png";
-import milk1 from  "../../assets/mockup final/f_milk1.png";
-import milk2 from  "../../assets/mockup final/f_milk2.png";
-import ldbanner from "../../assets/mockup final/ldbanner.svg";
-import banner from "../../assets/mockup final/banner.jpg";
+import ep from "../../assets/pcexp/empathy map.jpg";
+import jm from "../../assets/pcexp/jmap.png";
+import idea from "../../assets/pcexp/feature ideation.svg";
+import uf from "../../assets/pcexp/uf.png";
+import rough from "../../assets/pcexp/rough.jpg";
+import wf1 from  "../../assets/pcexp/w1.svg";
+import wf2 from  "../../assets/pcexp/w2.svg";
+import wf3 from  "../../assets/pcexp/w3.svg";
+import chat1 from  "../../assets/pcexp/f_aichat1.png";
+import chat2 from  "../../assets/pcexp/f_aichat2.png";
+import chat3 from  "../../assets/pcexp/f_aichat3.png";
+import chat4 from  "../../assets/pcexp/f_aichat4.png";
+import sugg1 from  "../../assets/pcexp/f_sugg1a.png";
+import sugg2 from  "../../assets/pcexp/f_sugg1b.png";
+import sugg3 from  "../../assets/pcexp/f_sugg1c.png";
+import sugg4 from  "../../assets/pcexp/f_sugg1d.png";
+import milk1 from  "../../assets/pcexp/f_milk1.png";
+import milk2 from  "../../assets/pcexp/f_milk2.png";
 import ProjectInfo from "./projectInfo"
-import search1 from "../../assets/mockup final/search1.svg"
-import search2 from "../../assets/mockup final/search2.svg"
-import search3 from "../../assets/mockup final/search3.svg"
-import search4 from "../../assets/mockup final/search4.svg"
-import search5 from "../../assets/mockup final/search5.svg"
-import search6 from "../../assets/mockup final/search6.svg"
-import designthinking from"../../assets/mockup final/designthinking.svg";
+import search1 from "../../assets/pcexp/search1.svg"
+import search2 from "../../assets/pcexp/search2.svg"
+import search3 from "../../assets/pcexp/search3.svg"
+import search4 from "../../assets/pcexp/search4.svg"
+import search5 from "../../assets/pcexp/search5.svg"
+import search6 from "../../assets/pcexp/search6.svg"
+import designthinking from"../../assets/pcexp/designthinking6.jpg";
 
 const InsightUnorderedList = () => {
     return(

@@ -5,10 +5,8 @@ import './LandingBody.css'
 import Typed from 'react-typed';
 
 import {Button, Nav, Container, Row, Col, Card} from 'react-bootstrap';
-import cutebb from "../../assets/img/cutebb.png";
-import me from "../../assets/img/me.svg";
 import me3 from "../../assets/img/me3.svg";
-import me4 from "../../assets/img/me4.svg";
+import amy1 from "../../assets/img/logo1.svg";
 
 
 class LandingBody extends React.Component{
@@ -39,7 +37,7 @@ class LandingBody extends React.Component{
                         className="typed-text-name"
                         id="myshit"
                         strings={[
-                            "hi! i'm amy,"]}
+                            "Hey! I'm Amy,"]}
                         typeSpeed={30}
                         ref = {this.titleRef}
                         onComplete={() => this.toggleCursor(this.titleRef, "0")}>
@@ -48,9 +46,9 @@ class LandingBody extends React.Component{
                         className="typed-text-description"
                         startDelay= {900}
                         strings={[
-                            'I design stuff',
-                            'I research stuff',
-                            "I break stuff"]}
+                            'I research',
+                            'I design',
+                            "I iterate"]}
                         typeSpeed={30}
                         backSpeed={30}
                         loop
@@ -59,7 +57,7 @@ class LandingBody extends React.Component{
                     </Typed>
                 </div>
                 <div className="landing-body-img-wrapper">
-                    <Card.Img variant="top"  className="landing-body-img" src={me3} />
+                    <Card.Img variant="top"  className="landing-body-img" src={amy1} />
                 </div>
             </div>
 
